@@ -85,7 +85,7 @@
                         <div class="form-group">
                             <label class="control-label"><b>Name</b></label>
                             <div>
-                                <input type="text" class="form-control input-lg" name="name" value="" [(ngModel)]="name" placeholder="Enter your name" required>
+                                <input type="text" [(ngModel)]="name" class="form-control input-lg" name="name" value=""  placeholder="Enter your name" required>
                             </div>
                         </div>
                         <div class="form-group">
@@ -171,7 +171,7 @@
                         </div> 
                         <div class="form-group">
                             <div class="mybtn" style="text-align: center">
-                                <button class="btn btn-round btn-info" type="submit" name="register" (click)="submit()" value="register">Register</button>
+                                <button class="btn btn-round btn-info" name="register" (click)="submit()" value="register">Register</button>
                             </div>
                         </div>
                     </form>

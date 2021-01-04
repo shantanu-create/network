@@ -13,6 +13,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
 import { AgmCoreModule } from '@agm/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     imports: [
@@ -21,7 +24,10 @@ import { AgmCoreModule } from '@agm/core';
         AgmCoreModule.forRoot({
             apiKey: 'YOUR_KEY_HERE'
         }),
-        RouterModule
+        RouterModule,
+        FormsModule,
+        BrowserModule,
+        HttpClientModule
     ],
     declarations: [
         SectionsComponent,

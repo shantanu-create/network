@@ -14,6 +14,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { PresentationModule } from './presentation/presentation.module';
 
 import { MglTimelineModule } from 'angular-mgl-timeline';
+// import { FormsModule } from '@angular/forms';
  
 
 @NgModule({

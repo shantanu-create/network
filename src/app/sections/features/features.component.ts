@@ -8,17 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturesComponent implements OnInit {
   name;
+  sector;
+  design;
+  email;
+  mobile;
+  stage;
+  arena;
+  pitchdeck;
 
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
 
   } 
-  submit(){
-    console.log(this.name);
+  submit(category){
+    console.log(this.name, category, this.sector, this.stage);
     const url = "https://api.ecell.in/summit/networking-reg/";
     var body = new FormData();
+    body.append('category', category)
     body.append('name', this.name)
+    body.append('sector', this.sector)
+    body.append('design', this.design)
+    body.append('email', this.email)
+    body.append('mobile', this.mobile)
+    body.append('stage', this.stage)
+    body.append('arena', this.arena)
+    body.append('pitchdeck', this.pitchdeck)
 
     
     // These are names to use

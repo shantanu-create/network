@@ -1,0 +1,110 @@
+<app-headers></app-headers>
+<app-features></app-features>
+<app-testimonials></app-testimonials>
+
+<app-teams></app-teams>
+<!-- <app-blogs></app-blogs>
+<app-projects></app-projects> -->
+<!-- <app-testimonials></app-testimonials> -->
+<app-contacts></app-contacts>
+<nav id="cd-vertical-nav">
+    <ul>
+        <li>
+            <a data-number="1" (click)="smoothScroll('headers')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Home</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="2" (click)="smoothScroll('features')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">About</span>
+            </a>
+        </li>
+        <li> 
+            <a data-number="3" (click)="smoothScroll('testimonials')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Arenas</span>
+            </a>
+        </li>
+        <li>
+            <a data-number="4" (click)="smoothScroll('teams')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Speakers</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a data-number="5" (click)="smoothScroll('blogs')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Investors</span>
+            </a>
+        </li> -->
+      
+        <!-- <li> 
+            <a data-number="5" (click)="smoothScroll('projects')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Projects</span>
+            </a>
+        </li>-->
+        <!-- <li> 
+            <a data-number="6" (click)="smoothScroll('pricing')">
+                <span class="cd-dot"></span>
+                <span class="cd-label">Pricing</span>
+            </a>
+        </li>-->
+        
+         <li> 
+            <a data-number="5" (click)="smoothScroll('contact-us')" >
+                <span class="cd-dot"></span>
+                <span class="cd-label">Contact Us</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+<footer class="footer footer-black">
+  <div class="social-line" id="sharing">
+      <div class="row">
+      <div class="container col-md-9">
+          <div class="row">
+              
+              <div class="col-md-2 col-sm-3">
+                  <a href="https://www.facebook.com/ecell.in" target="_blank" class="btn btn-link btn-just-icon btn-facebook mr-1">
+                      <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+                  </a>
+              </div>
+                <div class="col-md-2 col-sm-3">
+                  <a href="https://twitter.com/ecell_iitb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="btn btn-link btn-just-icon btn-twitter mr-1">
+                      <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                  </a>
+               </div>
+               <div class="col-md-2 col-sm-3">
+                  <a href="https://www.instagram.com/ecell_iitb/?hl=en" target="_blank" class="btn btn-link btn-just-icon btn-instagram">
+                      <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+                  </a>
+              </div>
+              <div class="col-md-2 col-sm-3">
+                <a href="https://www.linkedin.com/company/ecell_iitb/about/" target="_blank" class="btn btn-link btn-just-icon btn-linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+                </a>
+            </div>
+               <div class="col-md-2 col-sm-3"> 
+                  <a href="https://www.youtube.com/user/entrepreneurshipcell" target="_blank" class="btn btn-link btn-just-icon btn-youtube">
+                      <i class="fa fa-youtube" aria-hidden="true"></i> Youtube
+                  </a>
+              </div> 
+              
+          </div>
+      </div>
+      <div class="container col-md-3" style="text-align: center;">
+        
+            <span class="copyright">
+                © {{data | date: 'yyyy'}}, made by Entrepreneurship cell, <a href="https://www.ecell.in/esummit/team" target="_blank">Team 2020-21</a>.
+            </span>
+        
+      </div>
+    </div>
+   </div>
+</footer>
+

@@ -1,0 +1,858 @@
+<div class="section section-feature cd-section" id="features" style="padding: 0;">
+
+<!--     *********     FEATURES 1      *********      -->
+    <div class="features-1" style="background-color: #212F45;">
+        <div class="container">
+            <div class="row">
+              
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                   
+                       
+                    
+                    <h2 class="title" style="color: white;">NETWORKING ARENA</h2>
+                    <h5 class="description" style="color: white;">“We bring to you the most awaited Networking Events of E-Summit 2021. Every startup, investor, mentor, entrepreneur, student and professional is invited to connect with the best in the country. We have different arena’s to meet the requirements of each sector and make the most out of this opportunity to interact one-on-one with the experts."
+                    </h5>
+                       
+                </div>
+                <!-- <div class="col-md-2 ml-auto" >
+                    <div class="iphone-container">
+                        <img src="assets/img/flake.png" style="max-width: 50%;max-height: 0%;">
+                    </div>
+                </div> -->
+            </div>
+            <div class="row" > 
+               
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-danger"  style="color: #f7a072;">
+                            <i class="nc-icon nc-time-alarm"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"  style="color: white;">30 minutes</h4>
+                            <!-- <p class="description">Spend your time generating new ideas. You don't have to think of implementing.</p> -->
+                            <!-- <a href="#pkp" class="btn btn-link btn-danger">See more</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-danger"  style="color: #f7a072;">
+                            <i class="nc-icon nc-circle-10"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"  style="color: white;">25+ investors</h4>
+                            <!-- <p></p> -->
+                            <!-- <a href="#pkp" class="btn btn-link btn-danger">See more</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-danger" style="color: #f7a072;">
+                            <i class="nc-icon nc-single-02"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"  style="color: white;">40+ Mentors </h4>
+                            <!-- <p>Choose from a veriety of many colors resembling sugar paper pastels.</p> -->
+                            <!-- <a href="#pkp" class="btn btn-link btn-danger">See more</a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger"  style="color: #f7a072;">
+                            <i class="nc-icon nc-money-coins"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"  style="color: white;">INR 2 Million each!</h4>
+                           
+                        </div>
+                    </div>
+                </div> -->
+            </div> 
+        </div>
+    </div>
+    <div id="ModalExample_stat" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-xs-center" (click)="submit()" >Register for Networking Arena</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form  >
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label"><b>Name</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="" [(ngModel)]="name" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>E-Mail Address</b></label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>Contact Number</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="mobile" placeholder="Enter your mobile number" required>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label"><b>Register as</b></label>
+                            <div>
+                                <select name="designation" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="Startup Enthusiast">Startup Enthusiast</option>
+                                    <option value="Entrepreneur">Entrepreneur</option>
+                                    <option value="Investor">Investor</option>
+                                    <option value="Mentor">Mentor</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="control-label"><b>Arena</b></label>
+                            <div>
+                                <select name="arena" class="form-control">
+                                    <option value="">Select Arena</option>
+                                    <option value="Investor's Conclave">Investor's Conclave</option>
+                                    <option value="Industry Expert Networking">Industry Expert Networking</option>
+                                    <option value="Idea Validation Arena">Idea Validation Arena</option>
+                                    <option value="Alumni MeetUp">Alumni MeetUp</option>
+                                    <option value="Chat with Entrepreneurs">Chat with Entrepreneurs</option>
+                                    <option value="A Minute to Pitch It">A Minute to Pitch It</option>
+                                    <option value="Investor's Speed Dating">Investor's Speed Dating</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Startup Sector</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                            <select name="sector" class="form-control">
+                                <option value="">Select Sector</option>
+                                <option value="Blockchain/Deep Learning">Blockchain/Deep Learning</option>
+                                <option value="FMCG">FMCG</option>
+                                <option value="Hardware">Hardware</option>
+                                <option value="SaaS">SaaS</option>
+                                <option value="FoodTech">FoodTech</option>
+                                <option value="EduTech">EduTech</option>
+                                <option value="BioTech">BioTech</option>
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="FinTech">FinTech</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="IoT">IoT</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="GreenTech and Renewable energy">GreenTech and Renewable energy</option>
+                                <option value="IT">IT</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Startup Stage</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                                <input type="text" class="form-control input-lg" name="stage" placeholder="Enter your startup stage">
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>If you are a Startup, then a Pitch Deck of your Startup</b></label>
+                            <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="pitchdeck" placeholder="Paste the link here...">
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <div class="mybtn" style="text-align: center">
+                                <button class="btn btn-round btn-info" type="submit" name="register" (click)="submit()" value="register">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ModalExample" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-xs-center">Register for Networking Arena</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="index.php">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label"><b>Name</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>E-Mail Address</b></label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>Contact Number</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="mobile" placeholder="Enter your mobile number" required>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label"><b>Register as</b></label>
+                            <div>
+                                <select name="designation" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="Startup Enthusiast">Startup Enthusiast</option>
+                                    <option value="Entrepreneur">Entrepreneur</option>
+                                    <option value="Investor">Investor</option>
+                                    <option value="Mentor">Mentor</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="control-label"><b>Arena</b></label>
+                            <div>
+                                <select name="arena" class="form-control">
+                                    <option value="">Select Arena</option>
+                                    <option value="Investor's Conclave">Investor's Conclave</option>
+                                    <option value="Industry Expert Networking">Industry Expert Networking</option>
+                                    <option value="Idea Validation Arena">Idea Validation Arena</option>
+                                    <option value="Alumni MeetUp">Alumni MeetUp</option>
+                                    <option value="Chat with Entrepreneurs">Chat with Entrepreneurs</option>
+                                    <option value="A Minute to Pitch It">A Minute to Pitch It</option>
+                                    <option value="Investor's Speed Dating">Investor's Speed Dating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b> Any Specific sector for mentoring</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                                <input type="text" class="form-control input-lg" name="sector" placeholder="Enter the sector">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>If you are a Startup, then a Pitch Deck of your Startup</b></label>
+                            <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="pitchdeck" placeholder="Paste the link here...">
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <div class="mybtn" style="text-align: center">
+                                <button type="submit" name="register" value="register">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="ModalExample_ent" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-xs-center">Register for Networking Arena</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="index.php">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label"><b>Name</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>E-Mail Address</b></label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>Contact Number</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="mobile" placeholder="Enter your mobile number" required>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label"><b>Register as</b></label>
+                            <div>
+                                <select name="designation" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="Startup Enthusiast">Startup Enthusiast</option>
+                                    <option value="Entrepreneur">Entrepreneur</option>
+                                    <option value="Investor">Investor</option>
+                                    <option value="Mentor">Mentor</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="control-label"><b>Arena</b></label>
+                            <div>
+                                <select name="arena" class="form-control">
+                                    <option value="">Select Arena</option>
+                                    <option value="Investor's Conclave">Investor's Conclave</option>
+                                    <option value="Industry Expert Networking">Industry Expert Networking</option>
+                                    <option value="Idea Validation Arena">Idea Validation Arena</option>
+                                    <option value="Alumni MeetUp">Alumni MeetUp</option>
+                                    <option value="Chat with Entrepreneurs">Chat with Entrepreneurs</option>
+                                    <option value="A Minute to Pitch It">A Minute to Pitch It</option>
+                                    <option value="Investor's Speed Dating">Investor's Speed Dating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Startup sector</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                            <select name="sector" class="form-control">
+                                <option value="">Select Sector</option>
+                                <option value="Blockchain/Deep Learning">Blockchain/Deep Learning</option>
+                                <option value="FMCG">FMCG</option>
+                                <option value="Hardware">Hardware</option>
+                                <option value="SaaS">SaaS</option>
+                                <option value="FoodTech">FoodTech</option>
+                                <option value="EduTech">EduTech</option>
+                                <option value="BioTech">BioTech</option>
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="FinTech">FinTech</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="IoT">IoT</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="GreenTech and Renewable energy">GreenTech and Renewable energy</option>
+                                <option value="IT">IT</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Designation</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                                <input type="text" class="form-control input-lg" name="design" placeholder="Enter your designation">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>If you are a Startup, then a Pitch Deck of your Startup</b></label>
+                            <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="pitchdeck" placeholder="Paste the link here...">
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <div class="mybtn" style="text-align: center">
+                                <button type="submit" name="register" value="register">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalExample_ment" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-xs-center">Register for Networking Arena</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="index.php">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label"><b>Name</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>E-Mail Address</b></label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>Contact Number</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="mobile" placeholder="Enter your mobile number" required>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label"><b>Register as</b></label>
+                            <div>
+                                <select name="designation" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="Startup Enthusiast">Startup Enthusiast</option>
+                                    <option value="Entrepreneur">Entrepreneur</option>
+                                    <option value="Investor">Investor</option>
+                                    <option value="Mentor">Mentor</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="control-label"><b>Arena</b></label>
+                            <div>
+                                <select name="arena" class="form-control">
+                                    <option value="">Select Arena</option>
+                                    <option value="Investor's Conclave">Investor's Conclave</option>
+                                    <option value="Industry Expert Networking">Industry Expert Networking</option>
+                                    <option value="Idea Validation Arena">Idea Validation Arena</option>
+                                    <option value="Alumni MeetUp">Alumni MeetUp</option>
+                                    <option value="Chat with Entrepreneurs">Chat with Entrepreneurs</option>
+                                    <option value="A Minute to Pitch It">A Minute to Pitch It</option>
+                                    <option value="Investor's Speed Dating">Investor's Speed Dating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Startup sector</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                            <select name="sector" class="form-control">
+                                <option value="">Select Sector</option>
+                                <option value="Blockchain/Deep Learning">Blockchain/Deep Learning</option>
+                                <option value="FMCG">FMCG</option>
+                                <option value="Hardware">Hardware</option>
+                                <option value="SaaS">SaaS</option>
+                                <option value="FoodTech">FoodTech</option>
+                                <option value="EduTech">EduTech</option>
+                                <option value="BioTech">BioTech</option>
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="FinTech">FinTech</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="IoT">IoT</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="GreenTech and Renewable energy">GreenTech and Renewable energy</option>
+                                <option value="IT">IT</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Designation</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                                <input type="text" class="form-control input-lg" name="design" placeholder="Enter your designation">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>If you are a Startup, then a Pitch Deck of your Startup</b></label>
+                            <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="pitchdeck" placeholder="Paste the link here...">
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <div class="mybtn" style="text-align: center">
+                                <button type="submit" name="register" value="register">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ModalExample_invest" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-xs-center">Register for Networking Arena</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="index.php">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label"><b>Name</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="" placeholder="Enter your name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>E-Mail Address</b></label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="" placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>Contact Number</b></label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="mobile" placeholder="Enter your mobile number" required>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label"><b>Register as</b></label>
+                            <div>
+                                <select name="designation" class="form-control">
+                                    <option value="">Select</option>
+                                    <option value="Startup">Startup</option>
+                                    <option value="Startup Enthusiast">Startup Enthusiast</option>
+                                    <option value="Entrepreneur">Entrepreneur</option>
+                                    <option value="Investor">Investor</option>
+                                    <option value="Mentor">Mentor</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <label class="control-label"><b>Arena</b></label>
+                            <div>
+                                <select name="arena" class="form-control">
+                                    <option value="">Select Arena</option>
+                                    <option value="Investor's Conclave">Investor's Conclave</option>
+                                    <option value="Industry Expert Networking">Industry Expert Networking</option>
+                                    <option value="Idea Validation Arena">Idea Validation Arena</option>
+                                    <option value="Alumni MeetUp">Alumni MeetUp</option>
+                                    <option value="Chat with Entrepreneurs">Chat with Entrepreneurs</option>
+                                    <option value="A Minute to Pitch It">A Minute to Pitch It</option>
+                                    <option value="Investor's Speed Dating">Investor's Speed Dating</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Startup sector</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                            <select name="sector" class="form-control">
+                                <option value="">Select Sector</option>
+                                <option value="Blockchain/Deep Learning">Blockchain/Deep Learning</option>
+                                <option value="FMCG">FMCG</option>
+                                <option value="Hardware">Hardware</option>
+                                <option value="SaaS">SaaS</option>
+                                <option value="FoodTech">FoodTech</option>
+                                <option value="EduTech">EduTech</option>
+                                <option value="BioTech">BioTech</option>
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Consulting">Consulting</option>
+                                <option value="FinTech">FinTech</option>
+                                <option value="Agriculture">Agriculture</option>
+                                <option value="IoT">IoT</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="GreenTech and Renewable energy">GreenTech and Renewable energy</option>
+                                <option value="IT">IT</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>Designation</b></label>
+                            <!-- <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label> -->
+                            <div>
+                                <input type="text" class="form-control input-lg" name="design" placeholder="Enter your designation">
+                            </div>
+                        </div>
+                        <!-- <div class="form-group">
+                            <label class="control-label" style="margin-bottom: 0"><b>If you are a Startup, then a Pitch Deck of your Startup</b></label>
+                            <label class="control-label" style="font-size: 0.9em">Upload the pitch deck on google drive and paste the link here. Ensure viewing rights 'on' for 'anyone with the link' or else your entry will not be accounted.</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="pitchdeck" placeholder="Paste the link here...">
+                            </div>
+                        </div> -->
+                        <div class="form-group">
+                            <div class="mybtn" style="text-align: center">
+                                <button type="submit" name="register" value="register">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="features-1" style="background-color: #212F45;margin-bottom: -290px ;">
+  
+    
+    <div class="container" style="border-radius: 10px;">
+        <div class="card" style="background-color: #abddfc;z-index: 10;">
+            <div class="card-header" style="background-color: #abddfc;    border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 0 0;">
+                <h2 class="title" style="color: #212F45;text-align: center;" >REGISTER AS</h2>
+            </div>
+            <div class="card-body" style="font-size: larger;">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-2 ml-auto mb-1"><a href="#" data-toggle="modal" data-target="#ModalExample" target="_blank" class="btn btn-outline-info d-block d-lg-flex" style="color: #212F45;">Startup Enthusiast</a></div>
+                    <div class="col-sm-12 col-lg-2 ml-auto mb-1"><a href="#" data-toggle="modal" data-target="#ModalExample_stat" target="_blank" class="btn btn-outline-info  d-block d-lg-flexs" style="color: #212F45;">Startup</a></div>
+                    <div class="col-sm-12 col-lg-2 ml-auto mb-1"><a href="#" data-toggle="modal" data-target="#ModalExample_ent" target="_blank" class="btn btn-outline-info  d-block d-lg-flexs" style="color: #212F45;">Entrepreneur</a></div>
+                    <div class="col-sm-12 col-lg-2 ml-auto mb-1"><a href="#" data-toggle="modal" data-target="#ModalExample_ment" target="_blank" class="btn btn-outline-info  d-block d-lg-flexs" style="color: #212F45;">Mentor</a></div>
+                    <div class="col-sm-12 col-lg-2 ml-auto mb-1"><a href="#" data-toggle="modal" data-target="#ModalExample_invest" target="_blank" class="btn btn-outline-info  d-block d-lg-flexs" style="color: #212F45;">Investor</a></div>
+                </div>
+                
+                    
+                      
+
+                   
+                  
+                    
+                    <!-- <div class="col-md-3 d-flex justify-content-center ml-auto"><a href="" class="btn btn-outline-info">Mentors</a></div>
+                    <div class="col-md-3 d-flex justify-content-center ml-auto"><a href="" class="btn btn-outline-info">Investors</a></div>
+                    <div class="col-md-3 d-flex justify-content-center ml-auto"><a href="" class="btn btn-outline-info ">Entrepreneur</a></div>
+                     -->
+                   
+                    
+
+            
+                
+                <!-- <a href="" class="btn btn-primary m-2">Startup Enthusiast</a>
+                <a href="" class="btn btn-primary m-2">Startup</a>
+                <a href="" class="btn btn-primary m-2">Entrepreneur</a>
+                <a href="" class="btn btn-primary m-2">Mentor</a>
+                <a href="" class="btn btn-primary m-2">Inverstor</a> -->
+
+                <!-- <div class="nav-tabs-navigation" style="color: #212F45;"> 
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'">
+                            <ngb-tab title="22th December 2020" style="color: #212F45;">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="home" role="tabpanel"><h2 style="font-weight:500">Registration begins.</h2>
+                                        <br><p>Submission of startup details and pitch deck begins!</p></div>
+                                    
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="15th January 2021" style="color: #212F45;">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="home" role="tabpanel"><h2 style="font-weight:500">Registration Deadline.</h2>
+                                        <br><p>Hurry up before you miss the chance to bag INR 2 Million.</p></div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="21st January 2021" style="color: #212F45;">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="home" role="tabpanel"><h2 style="font-weight:500"> Declaration of Semi-finalists.</h2>
+                                        </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="30th January 2021" style="color: #212F45;">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="home" role="tabpanel"><h2 style="font-weight:500">Declaration of Finalists.</h2>
+                                       </div>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="7th February 2021" style="color: #212F45;">
+                                <ng-template ngbTabContent>
+                                    <div class="tab-pane active" id="home" role="tabpanel"><h2 style="font-weight:500">On Spot Funding Event.</h2>
+                                        <br><p>Pitching in front of investors.</p></div>
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+    <!--     *********     FEATURES 2      *********      -->
+    <!-- <div class="features-2"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">Is this what you are looking for?</h2>
+                    <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here.</h5>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" data-background="image" style="background-image: url('assets/img/sections/jan-sendereks.jpg')">
+                        <div class="card-body">
+                            <h6 class="card-category">Design</h6>
+                            <div class="card-icon">
+                                <i class="nc-icon nc-world-2"></i>
+                            </div>
+                            <p class="card-description">Unlike fashionable design, it lasts many years – even in today’s throwaway society.</p>
+
+                            <div class="card-footer">
+                                <a href="javascript:void(0)" class="btn btn-link btn-neutral">
+                                    <i class="fa fa-book" aria-hidden="true"></i> Show more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-background="image" style="background-image: url('assets/img/sections/anders-jilden.jpg')">
+                        <div class="card-body">
+                            <h6 class="card-category">UI Kits</h6>
+                            <div class="card-icon">
+                                <i class="nc-icon nc-single-copy-04"></i>
+                            </div>
+                            <p class="card-description">Imagine if you could go to the profile of a friend and instead of scrolling through...</p>
+
+                            <div class="card-footer">
+                                <a href="javascript:void(0)" class="btn btn-link btn-neutral">
+                                    <i class="fa fa-book" aria-hidden="true"></i> Show more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-background="image" style="background-image: url('assets/img/sections/uriel-soberanes.jpg')">
+                        <div class="card-body">
+                            <h6 class="card-category">Development</h6>
+                            <div class="card-icon">
+                                <i class="nc-icon nc-time-alarm"></i>
+                            </div>
+                            <p class="card-description"> For starters, it seemed like a good idea to keep a running list of Vision investments.</p>
+
+                            <div class="card-footer">
+                                <a href="javascript:void(0)" class="btn btn-link btn-neutral">
+                                    <i class="fa fa-book" aria-hidden="true"></i> Show more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+<!--     *********     FEATURES 3      *********      -->
+  
+<!--     *********     FEATURES 4     *********      -->
+     <!-- <div class="features-4">  
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">Timeline</h2>
+                    <h5 class="description">The more formalized version launching today brings a slate of corporate partners and a more structured application review process.</h5>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="ipad-container">
+                        <img src="assets/img/sections/ipad.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-4 offset-1">
+                    <div class="info info-horizontal">
+                        <div class="icon icon-info">
+                            <i class="nc-icon nc-atom" aria-hidden="true"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">what is the date of the ten minute million?</h4>
+                            <p>The moment you use Paper Kit, you know you’ve never felt anything like it. With a single use, is's a powerfull UI Kit</p>
+                        </div>
+                    </div>
+
+                    <div class="info info-horizontal">
+                        <div class="icon icon-success">
+                            <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">For Designers Only</h4>
+                            <p>The moment you use Paper Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before.</p>
+                        </div>
+                    </div>
+                    <div class="info info-horizontal">
+                        <div class="icon icon-success">
+                            <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">For Designers Only</h4>
+                            <p>The moment you use Paper Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before.</p>
+                        </div>
+                    </div>
+                    <div class="info info-horizontal">
+                        <div class="icon icon-success">
+                            <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">For Designers Only</h4>
+                            <p>The moment you use Paper Kit, you know you’ve never felt anything like it. With a single use, this powerfull UI Kit lets you do more than ever before.</p>
+                        </div>
+                    </div>
+                    <div class="info info-horizontal">
+                        <div class="icon icon-danger">
+                            <i class="nc-icon nc-tie-bow" aria-hidden="true"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Beautiful Examples</h4>
+                            <p>Speed up your development time or get inspired with the large number of example pages.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+<!--     *********     FEATURES 5      *********      -->
+
+    <!-- <div class="features-5 section-image" style="background-image: url('assets/img/sections/the-how-photographer.jpg')"> 
+        <div class="container">
+            <div class="row">
+                <div class="ml-auto mr-auto">
+                    <h2 class="title text-center">Your life will be much easier</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 ml-auto">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="nc-icon nc-atom" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="title">For Developers</h4>
+                        <p>While everyone technically has the feature now, that doesn’t mean you’ll see it all the time. But in this case, the feature wasn’t just randomly A/B tested.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 mr-auto">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="title">For Designers</h4>
+                        <p>Loveflutter has actually been around for a while, pivoting from matches based on shared interests (innovative!) to now focus on analyzing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bottom-line">
+                <div class="col-sm-5 ml-auto">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="nc-icon nc-paper" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="title">Example Pages Included</h4>
+                        <p>As for the user backlash, it comes to the challenges faces in building features to aid newcomers, which can impact its growth and bottom line.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 mr-auto">
+                    <div class="info">
+                        <div class="icon">
+                            <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                        </div>
+                        <h4 class="title">Save Time</h4>
+                        <p>The feature itself had been developed via experimental account, where it had tested how to better personalize its service to end users.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
